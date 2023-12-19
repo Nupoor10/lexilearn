@@ -1,0 +1,39 @@
+.sidebar__desktop__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar__desktop__container > span {
+    background-color: aliceblue;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.active-tab {
+    border-top: 3px solid rgb(24, 24, 118);
+    background-color: white;
+}
+
+.sidebar__mobile__container {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar__desktop__container {
+        display: none;
+    }
+    .sidebar__mobile__container {
+        display: block;
+    }
+    .sidebar__mobile__container select {
+        background-color: aliceblue;
+        padding: 15px;
+        border-radius: 15px;
+        outline: 2px solid black;
+    }
+    .sidebar__mobile__container option {
+        background-color: white;
+    }
+}

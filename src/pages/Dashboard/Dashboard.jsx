@@ -2,9 +2,16 @@ import React, { useState, useRef } from 'react';
 import { FaUserCircle } from "react-icons/fa"
 import { useNavigate } from 'react-router-dom';
 import { useAuthContext } from '../../hooks/useAuthContext';
+import Sidebar from '../../components/Sidebar/Sidebar';
+import Notes from '../../components/Notes/Notes';
+import TextToSpeech from '../../components/TextToSpeech/TextToSpeech';
+import Summary from '../../components/Summary/Summary';
+import SpeechToText from '../../components/SpeechToText/SpeechToText';
+import FlashCards from '../../components/FlashCards/FlashCards';
 import "./Dashboard.css";
 
 const Dashboard = () => {
+  const [activeComponent, setActiveComponent] = useState('notes');
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const { dispatch, user } = useAuthContext();
@@ -13,6 +20,10 @@ const Dashboard = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleButtonClick = (componentName) => {
+    setActiveComponent(componentName);
+  }
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
@@ -35,9 +46,13 @@ const Dashboard = () => {
         </div>
       </div>
       <div className='dashboard__page__main'>
-        <div>Sidebar</div>
+        <Sidebar handleButtonClick={handleButtonClick} />
         <div className='main__content__container'>
-          Main Content
+          {activeComponent === 'notes' && <Notes />}
+          {activeComponent === 'stt' && <SpeechToText />}
+          {activeComponent === 'summary' && <Summary />}
+          {activeComponent === 'tts' && <TextToSpeech />}
+          {activeComponent === 'cards' && <FlashCards />}
         </div>
       </div>
     </div>
