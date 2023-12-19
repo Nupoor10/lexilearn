@@ -17,6 +17,7 @@
 .footer__links {
     display: flex;
     flex-flow: column;
+    justify-content: space-between;
     margin: 0px 50px;
     font-size: 30px;
 }
@@ -28,4 +29,23 @@
 
 .footer__copyright {
     text-align: center;
+}
+
+@media screen and (max-width: 520px) {
+    .footer__body {
+        flex-direction: column;
+    }
+    .footer__links {
+        flex-direction: row;
+        width: 100%;
+    }
+    .footer__container h1 {
+        font-size: 18px;
+    }
+    .footer__container h3 {
+        font-size: 16px;
+    }
+    .footer__container p {
+        font-size: 14px;
+    }
 }

@@ -18,6 +18,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     margin-bottom: 40px;
+    color: white;
 }
 
 .register__form {
@@ -27,8 +28,7 @@
     justify-content: center;
     justify-self: center;
     background-color: black;
-    height: 500px;
-    width: 500px;
+    padding: 30px 20px;
     border-radius: 25px;
     margin-top: 40px;
 }
@@ -50,7 +50,7 @@
     color: white;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 10px;
     line-height: 22px;
     background-color: transparent;
@@ -85,4 +85,29 @@
 
 .register__btn:hover {
     background: #1b8211;
+}
+
+@media screen and (min-width:768px) {
+    .register__form {
+        width: 500px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .register__body {
+        margin: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .register__body {
+        padding: 20px;
+    }
+    .register__body > h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .register__btn, .register__form h3 {
+        font-size: 16px;
+    }
 }
