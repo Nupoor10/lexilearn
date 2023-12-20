@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 import { useAuthContext } from '../../hooks/useAuthContext';
 import './TextToSpeech.css';
 const apiURL = import.meta.env.VITE_BACKEND_URL;

@@ -1,0 +1,36 @@
+.stt__page__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.stt__page__container > h1 {
+    font-size: 28px;
+}
+
+.stt__page__container > textarea {
+    width: 90%;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.stt__page__container audio {
+    margin-top: 25px;
+}
+
+.stt__content {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 520px) {
+    .stt__page__container audio {
+        width: 250px;
+    }
+}
