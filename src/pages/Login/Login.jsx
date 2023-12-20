@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import axios from 'axios';
 import { useAuthContext } from '../../hooks/useAuthContext';
 import './Login.css';
+const apiURL = import.meta.env.VITE_BACKEND_URL;
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -14,7 +15,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/api/user/login", {
+      const res = await axios.post(`${apiURL}/user/login`, {
         email,
         password,
       });
@@ -76,7 +77,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <Toaster position='top-center' />
     </div>
   );
 };

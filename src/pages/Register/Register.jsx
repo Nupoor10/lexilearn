@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import axios from 'axios';
 import './Register.css';
+const apiURL = import.meta.env.VITE_BACKEND_URL;
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -12,7 +13,7 @@ const Register = () => {
 
   const handleRegistration = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/api/user/register", {
+      const res = await axios.post(`${apiURL}/user/register`, {
         name,
         email,
         password,
@@ -73,7 +74,6 @@ const Register = () => {
           </div>
         </div>
       </div>
-      <Toaster position='top-center' />
     </div>
   );
 };

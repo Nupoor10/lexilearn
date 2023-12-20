@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast';
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import Dashboard from './pages/Dashboard/Dashboard'
@@ -15,6 +16,7 @@ function App() {
         <Route path='/home' element={<Dashboard />}/>
       </Routes>
       <Footer />
+      <Toaster position='top-center' />
     </Router>
   )
 }
