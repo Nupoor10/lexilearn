@@ -21,7 +21,8 @@
   align-items: center;
   appearance: none;
   background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-  border: 0;
+  border: none;
+  outline: none;
   border-radius: 6px;
   box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
   box-sizing: border-box;
@@ -83,7 +84,8 @@
   text-align: center;
   text-decoration: none;
   transition: all 250ms;
-  border: 0;
+  border: none;
+  outline: none;
   font-size: 16px;
   user-select: none;
   -webkit-user-select: none;
