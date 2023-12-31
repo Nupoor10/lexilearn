@@ -40,6 +40,7 @@ Welcome to LexiLearn : the ultimate tool for your educational needs. Committed t
     <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"> 
     <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
     <img src="https://img.shields.io/badge/TensorFlow-FF6F80?style=for-the-badge&logo=tensorflow&logoColor=white"> 
+    <img alt="Git" src="https://img.shields.io/badge/Git-F09032?style=for-the-badge&logo=git&logoColor=white" />
 </div>
 
 LexiLearn is primarily built using the MERN stack and integrates several SDKs and APIs for performing tasks regarding AI and ML.
@@ -160,15 +161,21 @@ Alternatively the link to install Node.js can be found [here](https://nodejs.org
 
 1. Clone the repo:
 
-```git clone https://github.com/Nupoor10/lexilearn-backend.git```
+```
+git clone https://github.com/Nupoor10/lexilearn-backend.git
+```
 
 2. Install all dependencies:
 
-```npm install```
+```
+npm install
+```
 
 3. Copy the .env file
 
-```copy .env.example .env```
+```
+copy .env.example .env
+```
 
 4. Specify the .env variables like PORT, JWT_SECRET and MONGO_URI
 
@@ -184,26 +191,38 @@ Alternatively the link to install Node.js can be found [here](https://nodejs.org
 
 6. Run the development server:
 
-```npm run dev```
+```
+npm run dev
+```
 
 ### Frontend
 
 1. Clone the repo:
 
-```git clone https://github.com/Nupoor10/lexilearn.git```
+```
+git clone https://github.com/Nupoor10/lexilearn.git
+```
 
 2. Install all dependencies:
 
-```npm install```
+```
+npm install
+```
 
 3. Copy the .env file
 
-```copy .env.example .env```
+```
+copy .env.example .env
+```
 
 4. Replace the VITE_BACKEND_URL by your backend url specifying the port. The default value is: 
 
-```http://localhost:8080/api/v1```
+```
+http://localhost:8080/api/v1
+```
 
 5. Run the development server:
 
-```npm run dev```
+```
+npm run dev
+```
