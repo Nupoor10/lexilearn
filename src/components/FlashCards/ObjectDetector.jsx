@@ -58,7 +58,6 @@ const ObjectDetector = () => {
       canvasRef.current.height = videoHeight;
 
       const obj = await net.detect(video);
-      console.log(obj);
 
       const ctx = canvasRef.current.getContext("2d");
       drawRect(obj, ctx);
@@ -115,7 +114,6 @@ const ObjectDetector = () => {
         <canvas
           ref={canvasRef} className="canvas"
         />
-        {console.log(isDetecting)}
       </div>
       {isDetecting ? (
         <button onClick={stopDetection} className="primary__btn">

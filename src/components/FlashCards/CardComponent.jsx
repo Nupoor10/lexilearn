@@ -1,5 +1,4 @@
 import React from 'react'
-import { AiTwotoneDelete } from "react-icons/ai";
 import toast from 'react-hot-toast';
 import axios from "axios";
 import { useAuthContext } from '../../hooks/useAuthContext';

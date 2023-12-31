@@ -24,7 +24,6 @@ const NotesContainer = () => {
             },
           };
           const response = await axios.get(`${apiURL}/note/all`, config);
-          console.log(response);
           if (response && response.status === 200) {
             setNotes(response.data.notes);
           }

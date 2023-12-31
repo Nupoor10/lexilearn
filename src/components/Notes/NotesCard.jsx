@@ -25,7 +25,6 @@ const NotesCard = ({ id, title, content }) => {
 
      const handleDelete = async() => {
       try {
-        console.log(id);
 				if (user && id) {
 					const config = {
 						headers: {
@@ -33,7 +32,6 @@ const NotesCard = ({ id, title, content }) => {
 						},
 					  };
 					const response = await axios.delete(`${apiURL}/note/delete/${id}`, config);
-					console.log(response);
 					if(response && response.status ===200) {
 						toast.success("Deleted successfully");
 					}
@@ -53,7 +51,7 @@ const NotesCard = ({ id, title, content }) => {
         <div className="note__card">
           <div className="note__text">
             <h2>{title?.toUpperCase()}</h2>
-            <p>{content?.substring(0, 30)}</p>
+            <p>{content?.substring(0, 50)}</p>
           </div>
           <div className="note__icons">
             <div onClick={openModal}><FaRegEye cursor={'pointer'} /></div>
