@@ -22,7 +22,7 @@
 
 - Link to frontend repo can be found [here](https://github.com/Nupoor10/lexilearn)
 - Link to backend repo can be found [here](https://github.com/Nupoor10/lexilearn-backend)
-- Link to online demo can be found [here]()
+- Link to online demo can be found [here](https://lexilearn-tau.vercel.app/)
 
 ## About
 
