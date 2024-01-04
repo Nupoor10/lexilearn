@@ -13,10 +13,10 @@ const Footer = () => {
           </p>
         </div>
         <div className='footer__links'>
-          <a className='link' target='_blank' rel='noreferrer' href='https://www.instagram.com/'><AiFillInstagram /></a>
-          <a className='link' target='_blank' rel='noreferrer' href='https://in.linkedin.com/'><AiFillLinkedin /></a>
-          <a className='link' target='_blank' rel='noreferrer' href='https://twitter.com/'><AiFillTwitterCircle /></a>
-          <a className='link' target='_blank' rel='noreferrer' href='https://www.youtube.com/'><AiFillYoutube /></a>
+          <a style={{color: 'white'}} target='_blank' rel='noreferrer' href='https://github.com/Nupoor10/lexilearn'><AiFillGithub /></a>
+          <a style={{color: 'white'}} target='_blank' rel='noreferrer' href='https://github.com/Nupoor10/lexilearn-backend'><AiFillGithub /></a>
+          <a style={{color: 'white'}} target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/nupoor-shetye-8452111a7/'><AiFillLinkedin /></a>
+          <a style={{color: 'white', textDecoration: 'none'}} target='_blank' rel='noreferrer' href='https://peerlist.io/nupoor'>🅿️</a>
         </div>
       </div>
       <hr />
